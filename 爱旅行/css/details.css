@@ -1,0 +1,533 @@
+body{
+
+}
+
+header{
+	height: 50px;
+	width: 100%;
+	padding: 10px 5px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: #fff;
+}
+header .back,
+header .other-controls{
+	position: absolute;
+	top: 0;
+	height: 50px;
+	line-height: 999em;
+	overflow: hidden;	
+}
+header .back{
+	left: 15px;
+	width: 30px;
+	background: url(../images/sprites.png)
+	no-repeat -50px -6px ;
+	background-size: 450px 570px;
+}
+
+header .other-controls{
+	right: 0px;
+	width: 100px;
+	display: flex;
+}
+header  .share,
+header .more{
+	width: 50px;
+}
+header  .share{
+	background:url(../images/share.png)
+	no-repeat center / 40% 40%;
+}
+header .more{
+	background:url(../images/dash.png)
+	no-repeat center / 50% auto;
+}
+
+header h3{
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* 焦点图 */
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner p{
+	margin-bottom: 0;
+}
+.banner .banner-bg{
+	width: 100%;
+	padding-bottom: 70%;
+	display: block;
+	background: url(../images/banner6.png)
+	no-repeat center / 100% 100%;
+}
+.banner .banner-info{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	color: #fff;
+}
+.banner .banner-info .info-l{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner .banner-info .info-l-1,
+.banner .banner-info .info-l-2{
+	height: 22px;
+	padding: 0 8px;
+	line-height: 22px;
+/* 	font-size: 18px; */
+}
+.banner .banner-info .info-l-1{
+	border-right: 2px solid #fff;
+
+}
+/* 景点信息 */
+.mod{
+	padding: 10px 0;
+	/* border-bottom: 1px solid #888; */
+}
+.mod p{
+	margin: 0;
+}
+.tag.mod h3{
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0;
+}
+#star{
+	height: 15px;
+	width: 100px;
+	background: url(../images/sprites.png)
+	no-repeat -20px -253px;
+	background-size:450px 570px;
+	margin: 8px 0 8px -2px;
+}
+.tag.mod .money-info{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.tag.mod .money{
+	height: 45px;
+	line-height: 45px;
+	font-size: 12px;
+	color: #888;
+}
+.tag.mod .money>span{
+	font-size: 20px;
+	color: #e95508;
+	position: relative;
+	padding-left: 10px;
+}
+.tag.mod .money>span::after{
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	content: '¥';
+	color: #e95508;
+	font-size: 12px;
+}
+.tag.mod .tag-name{
+	display: flex;
+}
+.tag.mod .tag-name p{
+	border: 1px solid #ccc;
+	padding: 2px 4px;
+	margin: 0 5px;
+	background: #f4f4f4;
+	color: #666;
+	font-size: 12px;
+}
+
+/* 折扣 */
+.discount{
+	border: 1px solid #888;
+	border-left: none;
+	border-right: none;
+	background: #fcebcc;
+	padding: 15px 0;
+}
+
+.discount .item{
+	display: flex;
+	width: 100%;
+	margin-bottom: 2px;
+	position: relative;
+}
+.discount .item .title{
+	min-width: 35px;
+	height: 100%;
+	display: block;
+	margin: 0;
+	text-align: center;
+	color: red;
+	border: 1px solid red;
+	border-radius: 5px;
+	margin-right: 8px;
+}
+.discount .item.discount-2 .title{
+	border: none;
+	background: red;
+	color: #fff;
+}
+.discount .item .main{
+	margin: 0;
+	padding-left: 15px;
+	overflow: hidden;
+	max-width: 85%;
+}
+.discount .item .main li{
+	list-style-type: disc;
+}
+.discount .item .main a{
+	color: #666;
+	font-size: 12px;
+}
+.discount .more-btn{
+	position: absolute;
+	top: -18px;
+	right: -15px;
+	width: 30px;
+	height: 50px;
+	background: url(../images/gt-icon.png)
+	no-repeat center;
+	background-size: 25% auto;
+	z-index: 99;
+}
+
+/* 评分信息 */
+.appraisal-info{
+	border: 1px solid #ccc;
+	border-left: 0;
+	border-right:0;
+}
+.appraisal-info>.container{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.appraisal-info .item.appraisal-1{
+	border-bottom: 1px solid #888;
+}
+.appraisal-info .item .title{
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
+	font-size: 12px;
+}
+.appraisal-info .item .title span{
+	color: red;
+}
+.appraisal-info .item  .title-left,
+.appraisal-info .item  .title-right{
+	padding: 0 5px;
+}
+.appraisal-info .item  .title-left{
+	border-right: 1px solid #ccc;
+}
+.appraisal-info .item  .title-left{
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.appraisal-info .item .tag-box{
+	padding-bottom: 8px;
+}
+.appraisal-info .item .tag-box button{
+	height: 25px;
+	margin: 5px;
+	font-size: 12px;
+	padding: 2px 4px;
+	color: #666;
+	background: #f5f5f5;
+}
+.appraisal-info .appraisal-2 .title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.appraisal-info .appraisal-2 .main p{
+	margin-bottom: 0;
+	font-size: 12px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+.appraisal-info .appraisal-2 a{
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #98ccee;
+	color: #98ccee;
+	display: block;
+	border-radius: 5px;
+	margin: 10px auto 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/* 行程选项卡 */
+.card-mod .list{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	margin-bottom: 0;
+}
+.card-mod .list li{
+	overflow: hidden;
+	height: 100%;
+	line-height: 40px;
+	width: 33.33%;
+	text-align: center;
+	position: relative;
+}
+.card-mod .list li a{
+	color: #666;
+}
+.card-mod .list li.active a{
+		color:#35abbf;
+}
+.card-mod .list li.active::after{
+	width: 100%;
+	height: 5px;
+	background: orange;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+}
+.card-mod  .card-item{
+	width: 100%;
+}
+.card-mod  .card-bg a{
+	width: 100%;
+	display: block;
+	
+}
+.card-mod  .card-bg img{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+/* 行程安排 */
+.card-mod  .card-plan{
+	position: relative;
+	width: 100%;
+	padding: 20px 0;
+/* 	height: 132vh; */
+}
+.card-mod  .card-plan p{
+	margin-bottom: 0;
+}
+.card-mod  .card-plan .plan-l{
+	width: 15%;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	border-right: 1px dashed #2f90c2;
+	height: 100%;
+}
+.card-mod  .card-plan .plan-r{
+	width: 85%;
+	position: absolute;
+	top: 20px;
+	right: 0; 
+	padding: 0 10px;
+	font-size: 12px;
+}
+.card-mod  .card-plan .plan-r-item{
+	position: relative;
+	margin: 15px 0;
+}
+.card-mod  .card-plan .dash{
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: #2f90c2;
+	border-radius: 50%;
+	top: 5px;
+	left: -15px;
+}
+.card-mod  .card-plan .tag{
+	width: 75px;
+	height: 35px;
+	line-height: 40px;
+	color: #fff;
+	background: url(../images/sprites.png)
+	no-repeat -130px -248px;
+	background-size:460px 585px;
+	text-indent: 8px;
+	position: absolute;
+	top: -4px;
+	left: -84px;
+	text-align: center;
+	font-size: 10px;
+}
+.card-mod  .card-plan .time-tag{
+	border: 1px solid #ccc;
+	padding: 2px;
+	color: #ccc;
+	margin-left: 5px;
+}
+.card-mod  .card-plan .item-img{
+	padding: 10px 8%;
+}
+.card-mod  .card-plan .item-img a{
+	width: 42%;
+	padding-bottom: 42%;
+	float: left;
+	display: block;
+	border: 1px solid #666;	
+	margin: 5px;
+}
+.card-mod  .card-plan .item-img .img-1{
+	background: url(../images/travel_info/travel-info-img1.png)
+	no-repeat center /100% 100%;
+}
+.card-mod  .card-plan .item-img .img-2{
+	background: url(../images/travel_info/travel-info-img2.png)
+	no-repeat center /100% 100%;
+}
+.card-mod  .card-plan .item-img .img-3{
+	background: url(../images/travel_info/travel-info-img3.png)
+	no-repeat center /100% 100%;
+}
+.card-mod  .card-plan .item-img .img-4{
+	background: url(../images/travel_info/travel-info-img4.png)
+	no-repeat center /100% 100%;
+}
+.card-mod  .card-plan .item-img .img-5{
+	background: url(../images/travel_info/travel-info-img5.png)
+	no-repeat center /100% 100%;
+}
+.card-mod  .card-plan .item-img .img-6{
+	background: url(../images/travel_info/travel-info-img6.png)
+	no-repeat center /100% 100%;
+}
+.card-mod  .card-plan .item-img .img-7{
+	background: url(../images/travel_info/travel-info-img7.png)
+	no-repeat center /100% 100%;
+}
+.card-mod  .card-plan .item-img .img-8{
+	background: url(../images/travel_info/travel-info-img8.png)
+	no-repeat center /100% 100%;
+}
+.card-mod  .card-plan .item-img .img-9{
+	background: url(../images/travel_info/travel-info-img9.png)
+	no-repeat center /100% 100%;
+}
+.card-mod  .card-plan .item-img .img-10{
+	background: url(../images/travel_info/travel-info-img10.png)
+	no-repeat center /100% 100%;
+}
+
+/* 预定须知 */
+.card-notes{
+	
+}
+.card-notes>.container{
+	padding: 0 35px;
+}
+.card-notes p{
+	margin-bottom: 0;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.card-notes .notes-1{
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+}
+.card-notes .notes-1 .icon{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: -5px;
+	left: -35px;
+	background: url(../images/sprites.png)
+	no-repeat -215px -248px;
+	background-size:460px 585px;
+}
+.card-notes h5{
+	font-size: 14px;
+	color: #439eb6;
+	font-weight: 600;
+}
+.card-mod .card-item{
+	display: none;
+}
+
+/* 开始预订 */
+.foot-controls{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: #f4f4f4;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.foot-controls .item{
+	width: 15%;
+	height: 50px;
+	border-right: 1px solid #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.foot-controls .item:nth-child(3){
+	border: none;
+}
+.foot-controls .icon{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../images/sprites.png)
+	no-repeat ;
+	background-size:460px 585px;
+	
+}
+.foot-controls .icon.love{
+	background-position: -276px -194px;
+}
+.foot-controls .icon.add{
+	background-position: -325px -194px;
+}
+.foot-controls .icon.me{
+	background-position: -372px -192px;
+}
+.foot-controls .go{
+	width: 55%;
+	height: 100%;
+	background: orange;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+}

@@ -1,0 +1,371 @@
+body{
+	padding-top: 50px;
+	background: #edf2f1;
+	padding-bottom: 65px;
+}
+header{
+	height: 50px;
+	background: #1449AE;
+}
+header .top-tabs{
+	height: 30px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: 10px 0;
+}
+header .top-tabs .back{
+	height: 100%;
+	width: 30px;
+	line-height: 999em;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/sprites.png)
+	no-repeat -55px -20px ;
+	background-size: 450px 570px;
+}
+header h3{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+/* 标题模块 */
+.main .title-mod{
+	width: 100%;
+	display: flex;
+	padding: 15px 0;
+}
+.main .title-mod p{
+	margin-bottom: 0;
+}
+.main  .title-l,
+.main  .title-r{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.main  .title-l{
+	width: 70%;
+}
+.main  .title-r{
+	width: 30%;
+	align-items: flex-end;
+}
+.main  .title-l  p{
+	color: #888;
+	font-size: 12px;
+}
+.main  .title-l h5{
+	margin-bottom: 2px;
+	font-size: 16px;
+}
+.main  .title-l .days span,
+.main  .title-l .people-nums span{
+	font-size: 16px;
+	font-weight: 500;
+	color: #000;
+}
+.main  .title-r .money{
+	font-size: 20px;
+	color: orange;
+	position: relative;
+	width: 50px;
+}
+.main  .title-r .money::after{
+	width: 10px;
+	height: 10px;
+	font-size: 12px;
+	content: '¥';
+	position: absolute;
+	top: 2px;
+	left: -8px;
+	color: orange;
+}
+.main  .title-r .money-details{
+	font-size: 12px;
+	color: #666;
+}
+/* 机票模块 */
+.ticket-mod{
+	width: 100%;
+	box-shadow: 0 0 1px 1px #888;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.ticket-mod p{
+	margin-bottom: 0;
+}
+.ticket-mod .mod-top{
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px dashed  #888;
+	position: relative;
+}
+.ticket-mod .mod-top::before,
+.ticket-mod .mod-top::after{
+	width: 20px;
+	height: 20px;
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	background: #edf2f1;
+	bottom: -10px;
+	box-shadow: 0 0 1px 1px #888;
+	border: 1px solid #edf2f1;
+	z-index: 10;
+}
+.ticket-mod .mod-top::before{
+	left:-10px;
+}
+.ticket-mod .mod-top::after{
+	right: -10px;
+}
+
+.ticket-mod .mod-top .item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 15px;	
+}
+.ticket-mod .mod-top .item h3{
+	margin: 0;
+}
+.ticket-mod .mod-top .go-icon{
+	width: 50px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ticket-mod .go-icon .icon{
+	width: 50px;
+	height: 50px;
+	display: block;
+	background: url(../images/sprites.png)
+	no-repeat -300px -240px;
+	background-size: 450px 570px;
+}
+
+.ticket-mod .mod-foot{
+	padding: 10px 25px;	
+	background: #f9f9f9;
+}
+.ticket-mod .mod-foot .item{
+	display: flex;
+	justify-content: space-between;
+}
+.ticket-mod .mod-foot .item-mod{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 12px;
+	min-width: 80px;
+}
+.ticket-mod .mod-foot .icon{
+	background: none;
+}
+
+/* 额外费用账单 */
+.extra-cost-mod{	
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0 0 1px 1px #888;
+	background: #fff;
+}
+.extra-cost-mod p{
+	margin-bottom: 0;
+}
+.extra-cost-mod .container{
+	padding: 0;	
+}
+.extra-cost-mod .title{
+	padding: 4px 8px;
+	background: #36b5db;
+	color: #fff;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	position: relative;
+}
+.extra-cost-mod .title .icon{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #1b8fb1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 4px;
+	right: 8px;
+}
+.extra-cost-mod .line{
+	width: 100%;
+	height: 2px;
+	background: #53d5ea;
+}
+.extra-cost-mod .list{
+	width: 100%;
+}
+.extra-cost-mod .list .inner{
+	border-bottom: 1px dashed  #888;
+	padding: 8px 10px;
+}
+.extra-cost-mod .list .item{
+	width: 100%;
+	display: flex;	
+	margin: 8px 0;
+}
+.extra-cost-mod .item-l{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+}
+.extra-cost-mod .item-r{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.extra-cost-mod .item-r span{
+	font-size: 20px;
+	color: orange;
+	position: relative;
+}
+.extra-cost-mod .item-r span::after{
+	width: 10px;
+	height: 10px;
+	font-size: 10px;
+	content: '¥';
+	position: absolute;
+	top: 0;
+	left: -5px;
+	color: orange;
+}
+.extra-cost-mod .controls{
+	margin-top: 5px;
+}
+.extra-cost-mod .controls p{
+	background: #e5e5e5;
+}
+
+.extra-cost-mod  .insurance{
+	width: 100%;
+	padding: 12px 8px 30px;
+	font-size: 12px;
+}
+.extra-cost-mod  .insurance h6{
+	margin: 5px 0;
+	font-size: 16px;
+}
+.extra-cost-mod  .insurance .info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #a8abad;
+}
+.extra-cost-mod  .insurance .info span{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #333;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 2px;
+	font-size: 12px;
+}
+.extra-cost-mod  .insurance .insurance-item{
+	display: flex;
+	margin: 10px 0;
+}
+.extra-cost-mod .insurance-item .item-l{	
+	width: 15%;
+	position: relative;
+}
+.extra-cost-mod .insurance-item .item-r{
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.extra-cost-mod  .item-l .icon{
+	width: 15px;
+	height: 15px;
+	display: block;
+	border: 1px solid #888;
+	border-radius: 2px;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	transform: translate(-50%,-50%);
+}
+
+.extra-cost-mod  .item-l.active .icon::after{
+	background: url(../images/sprites.png)
+	no-repeat -310px -210px;
+	/* 621 420 */
+	background-size: 375px 475px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	content: '';
+	top: -5px;
+	right: -5px;
+}
+.extra-cost-mod  .item-r .inner-content{
+	display: flex;
+	justify-content: space-around;
+}
+.extra-cost-mod  .item-r .inner-content .money{
+	min-width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.extra-cost-mod  .item-r .inner-content .green-p{
+	color: #ccc;
+}
+.extra-cost-mod .item-r .reset-btn{
+	position: absolute;
+	bottom: -25px;
+	right: 8%;
+}
+
+
+
+/* 尾页 */
+footer .next-btn{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0;
+	background: #f1a40f;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/* 媒体查询 */
+@media (max-width:625px) {
+	.coupon-mod .sawtooth .sawtooth-r{
+		margin: 0 8px;
+		padding: 5px 8px;
+		width: 75%;
+	}
+	.coupon-mod .sawtooth .sawtooth-r .icon-r{
+		right: 12px;
+	}
+}

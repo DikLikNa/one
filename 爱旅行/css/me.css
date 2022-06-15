@@ -1,0 +1,289 @@
+body{
+	padding-top: 49px;
+}
+header{
+	height: 50px;
+	background: #144fb0;
+	border: 0;
+	z-index: 999;
+}
+header .top-tabs{
+	height: 30px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: 10px 0;
+}
+header .top-tabs .back{
+	height: 100%;
+	width: 30px;
+	line-height: 999em;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/sprites.png)
+	no-repeat -55px -20px ;
+	background-size: 450px 570px;
+}
+header h3{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+
+
+/* 个人基本信息 */
+.default-info{
+	width: 100%;
+	border-bottom: 1px solid #666;
+}
+.default-info .info-top{
+	background: #144fb0;
+	height: 30%;
+	min-height: 10vh;
+	padding-bottom: 10%;
+	width: 100%;
+	position: relative;
+}
+.default-info .info-footer{
+	width: 100%;
+	height: 70%;
+	background: #edf2f1;
+	position: relative;
+}
+
+.default-info  .user-photo{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	z-index: 99;
+}
+.default-info  .user-photo a.user{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.default-info  .user-photo a.user img{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.default-info  .user-photo .camera{
+	position: absolute;
+	bottom: 4%;
+	right: -6%;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: block;
+	background: #f2a510;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px;
+}
+.default-info  .user-photo .camera img{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;	
+}
+.default-info .info-footer{
+	padding: 13% 10px 20px;
+}
+.default-info .info-footer p{
+	margin-bottom: 0;
+	text-align: center;
+}
+.default-info .user-name{
+	font-size: 16px;
+	color: #666;
+	font-weight: 500;
+}
+.default-info .user-tips{
+	font-size: 12px;
+	color: #888;
+	margin: 2px 0;
+}
+.default-info  .ticket-box{
+	width: 100%;
+	display: flex;
+}
+.default-info .inner-content p{
+	margin-bottom: 0;
+}
+.default-info .inner-content{
+	width: 50%;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.default-info .ticket-info{
+	border-right: 1px dashed #888;
+}
+.default-info .inner-content .details-info{
+	font-size: 25px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	top: 5px;
+}
+.default-info .inner-content .details-info span{
+	font-size: 12px;
+	margin-right: 2px;
+}
+.default-info .inner-content .details-info.num{
+	align-items: flex-end;
+}
+.default-info .inner-content i{
+	font-style: normal;
+	font-size: 12px;
+	margin-left: 2px;
+	position: relative;
+	top: -5px;
+}
+.default-info .inner-content .details-name{
+	color: #999;
+}
+
+/* 其他卡券信息 */
+.other-info{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	background: #fff;
+}
+.other-info .top-list{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px 40px;
+}
+.other-info .top-list .icon{
+	width: 35px;
+	height: 40px;
+	display: block;
+	background: url(../images/sprites.png)
+	no-repeat ;
+	background-size: 300px 380px;
+	margin: 0 auto;
+}
+.other-info .top-list .icon-1{
+	background-position: -14px -280px;
+}
+.other-info .top-list .icon-2{
+	background-position: -59px -280px;
+}
+.other-info .top-list .icon-3{
+	background-position: -104px -280px;
+}
+.other-info .top-list .icon-4{
+	background-position: -150px -280px;
+}
+.other-info .top-list  h6{
+	margin-top: 4px;
+}
+
+.other-info .foot-list,
+.other-info .foot-list .item,
+.other-info .foot-list .inner{
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.other-info .foot-list .item{
+	flex-direction: column;
+}
+.other-info .foot-list .inner{
+	justify-content: space-between;
+	margin: 2px 0;
+}
+.other-info .foot-list .inner p{
+	width: 100%;
+	text-align: left;
+	padding: 0 10px;
+	font-size: 14px;
+	color: #666;
+}
+.other-info .foot-list{
+	padding: 10px 20px;
+	flex-direction: column;
+}
+.other-info .foot-list p{
+	margin-bottom: 0;
+}
+.other-info .foot-list i{
+	font-style: normal;
+}
+.other-info .foot-list .inner .go{
+	width: 35px;
+	height: 40px;
+	display: block;
+	background: url(../images/gt-icon.png)
+	no-repeat center / 35% auto;
+	
+}
+.other-info .foot-list .inner .icon{
+	min-width: 35px;
+	width: 35px;
+	height: 40px;
+	display: block;
+	background: url(../images/sprites.png)
+	no-repeat ;
+	background-size: 300px 380px;
+}
+.other-info .foot-list .inner .icon1{
+	background-position: -14px -326px;
+}
+.other-info .foot-list .inner .icon2{
+	background-position: -59px -326px;
+}
+.other-info .foot-list .inner .icon3{
+	background-position: -104px -326px;
+}
+.other-info .foot-list .inner .icon4{
+	background-position: -150px -326px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 媒体查询 */
+@media (min-width:750px) {
+	.default-info .info-top{
+		/* min-height: 20vh; */
+	}
+	.default-info .user-photo{
+		width: 120px;
+		height: 120px;
+	}
+	.default-info .user-photo .camera{
+		width: 40px;
+		height: 40px;
+	}
+	.default-info .info-footer{
+		padding-top: 8%;
+	}
+}
+
